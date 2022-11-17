@@ -1,0 +1,74 @@
+@font-face {
+    font-family: AmericanWrite;
+    src: url("../assets/AmericanTypewriter.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Silka-light;
+    src: url("../assets/Silka-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Silka-bold;
+    src: url("../assets/Silka-Bold.otf") format("opentype");
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/background.png);
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode:overlay;
+    
+}
+
+.container-top{
+    padding-top: 1em;
+}
+
+.top-nav{
+    margin-bottom: 0;
+    font-family: Silka-Light;
+}
+
+.top-nav-item{
+    
+    color: black;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.top-nav-item.active{
+    color: #C92C0A;
+    font-family: Silka-bold;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 0;
+}
+
+.top-nav-item.active:before{
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.margen-top{
+    margin-top: 5em;
+    
+}
+
+.banner{
+    width: 1000px;
+    height: 500px;
+    background-color: black;
+    border-top: 5px white solid;
+    outline: 2px black solid;
+ 
+
+}
