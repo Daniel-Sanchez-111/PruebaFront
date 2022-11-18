@@ -1,28 +1,72 @@
 @font-face {
     font-family: AmericanWrite;
-    src: url("../assets/AmericanTypewriter.otf") format("opentype");
+    src: url("public/assets/AmericanTypewriter.otf") format("opentype");
 }
 
 @font-face {
     font-family: Silka-light;
-    src: url("../assets/Silka-Light.otf") format("opentype");
+    src: url("public/assets/Silka-Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: Silka-bold;
-    src: url("../assets/Silka-Bold.otf") format("opentype");
+    src: url("public/assets/Silka-Bold.otf") format("opentype");
 }
+
+@font-face {
+    font-family: cooperl;
+    src: url("public/assets/cooperl.ttf") format("truetype");
+}
+
 html,body{
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
-    background-image: url(../assets/background.png);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url(public/assets/background.png);
+    background-color: rgba(255, 255, 255, 0.95);
     background-blend-mode:overlay;
     
 }
 
 .container-top{
-    padding-top: 1em;
+    width: 98vw;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-top nav{
+    margin-bottom: 5em;
+}
+
+.container-general{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-maduracion{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.container-maduracion-img-left{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    margin-top: 5%;
+}
+
+.container-maduracion-img-right{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    margin-top: 5%;
 }
 
 .button-shopping-cart{
@@ -36,6 +80,7 @@ html,body{
     border-color: #C92C0A;
     border-radius: 5em;
     background-color: #F4D4D4;
+    align-self: center;
 }
 
 .top-nav{
@@ -65,13 +110,6 @@ html,body{
 }
 
 
-.margen{
-    margin-top: 5em;
-}
-
-.margin-center{
-    margin: 0 auto;
-}
 
 .banner{
     width: 1000px;
@@ -80,6 +118,7 @@ html,body{
     border-top: 5px white solid;
     outline: 2px black solid;
     padding: 10vh;
+    margin: 0 auto;
 }
 
 .text-with-decoration{
@@ -87,8 +126,85 @@ html,body{
 }
 
 
-.img-texto{
+
+
+
+.img-general{
     max-width: 100%;
     max-height: 100%;
 }
 
+.maduracion{
+    width: 98vw;
+    height: auto;
+    display: flex;
+    margin-top: 10vh;
+}
+
+.maduracion-texto{
+    font-family: cooperl;
+    letter-spacing: 0.2em;
+}
+
+.maduracion-original{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    background-image: url(/public/assets/original.svg);
+}
+
+.maduracion-contenido-original{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-image: url(public/assets/original.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.maduracion-gold{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    background-image: url(public/assets/gold.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img{
+    width: 15em;
+    height: auto;
+}
+
+.img-maduracion{
+    width: 25em;
+    height: auto;
+}
+
+.img-sm{
+    width: 15em;
+    height: auto;
+}
+
+
+/*Figuras*/
+.circle{
+    width: 0.4em;
+    height: 0.4em;
+    background-color: black;
+    border-radius: 5em;
+    margin-top: 0.6em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.line{
+    width: 10em;
+    height: 0.1em;
+    background-color: black;
+    margin-top: 1.2em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
