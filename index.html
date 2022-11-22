@@ -19,7 +19,7 @@
 
   <body>
     <!-- Logo y boton -->
-    <div class="container-top">
+    <div class="container-top flex">
       <img
         src="./public/assets/logotipo_masia_tallon.png"
         alt=""
@@ -33,7 +33,7 @@
     <!-- Logo y boton -->
 
     <!-- MENU DE NAVEGACION -->
-    <div class="container-top mx-auto">
+    <div class="container-top flex mx-auto">
       <nav class="d-flex justify-content-around top-nav">
         <a href="#" class="top-nav-item active">Inicio</a>
         <a href="#" class="top-nav-item">Nosotros</a>
@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class="container-top mt-5">
+    <div class="container-top flex mt-5">
       <span class="circle"></span>
       <p class="text-with-decoration">descubre más deslizando</p>
       <span class="circle"></span>
@@ -81,9 +81,9 @@
     <!-- TOMATE -->
 
     <!-- Maduracion -->
-    <div class="maduracion">
-      <div class="maduracion-original">
-        <div class="container-general">
+    <div class="maduracion flex">
+      <div class="container-half">
+        <div class="container-general flex">
           <span class="line"></span>
           <h1 class="maduracion-texto">ORIGINAL</h1>
           <span class="line"></span>
@@ -110,10 +110,12 @@
             />
           </div>
 
-          <div class="container-maduracion">
-            <div class="container-maduracion-img-left">
-              <div class="img flex">
-                <span class="icons"><img src="public/assets/sabor_ajo_original.png" alt="" ></span>
+          <div class="container-maduracion flex">
+            <div class="container-maduracion-img-left flex">
+              <div class="img">
+                <!-- <span class="icons"
+                  ><img src="public/assets/sabor_ajo_original.png" alt=""
+                /></span> -->
                 <img
                   src="public/assets/Gold_up 1.png"
                   alt=""
@@ -122,7 +124,7 @@
               </div>
             </div>
 
-            <div class="container-maduracion-img-right">
+            <div class="container-maduracion-img-right flex">
               <div class="img">
                 <img
                   src="public/assets/Gold_up 1.png"
@@ -132,13 +134,14 @@
               </div>
             </div>
           </div>
+          <button type="submit" class="btn-original">ver productos</button>
         </div>
       </div>
       <!-- Maduracion orignal -->
 
       <!-- Maduracion gold -->
-      <div class="maduracion-gold">
-        <div class="container-general">
+      <div class="container-half">
+        <div class="container-general flex">
           <span class="line"></span>
           <h1 class="maduracion-texto">GOLD</h1>
           <span class="line"></span>
@@ -165,8 +168,8 @@
             />
           </div>
           <!-- Imagenes al fondo -->
-          <div class="container-maduracion">
-            <div class="container-maduracion-img-left">
+          <div class="container-maduracion flex">
+            <div class="container-maduracion-img-left flex">
               <div class="img">
                 <img
                   src="public/assets/Gold_up 1.png"
@@ -176,7 +179,7 @@
               </div>
             </div>
 
-            <div class="container-maduracion-img-right">
+            <div class="container-maduracion-img-right flex">
               <div class="img">
                 <img
                   src="public/assets/Gold_up 1.png"
@@ -189,8 +192,77 @@
           <!-- Imagenes al fondo -->
         </div>
         <!-- Maduracion gold -->
+        <button type="submit" class="btn-gold">ver productos</button>
       </div>
-      <!-- Maduracion -->
+    </div>
+    <!-- Maduracion -->
+    <div class="container-general margin-top-10">
+      <div class="container-50 mx-auto">
+        <img src="public/assets/que_es_masia_tallon.png" alt="" />
+      </div>
+
+      <div class="container-50 flex mx-auto">
+        <div class="container-half margin-top-5 me-5">
+          <div class="flex">
+            <p class="about-header align-self-center ms-4">EL QUINTO SABOR</p>
+            <img
+              src="public/assets/ornament-red-flower.svg"
+              alt=""
+              class="img-general"
+            />
+          </div>
+          <div>
+            <p class="about-content mt-3 ms-4">
+              laboriosam facere veritatis officiis similique culpa ipsam
+              voluptate ducimus.
+              <span class="about-content-bold"
+                >ipsum dolor sit amet consectetur adipisicing elit. Omnis,</span
+              >Quia iure, at quae dolorem dolores voluptate quo ipsum doloremque
+              provident quaerat sunt tempora assumenda commodi fugiat? Accusamus
+              atque natus ipsum molestias? Dolorum incidunt explicabo omnis!
+            </p>
+          </div>
+
+          <div class="flex mt-3 ms-4">
+            <p class="about-header align-self-center">¿POR QUÉ MASIA TALLÓN?</p>
+            <img
+              src="public/assets/ornament-red-flower.svg"
+              alt=""
+              class="img-general"
+            />
+          </div>
+          <div>
+            <p class="about-content mt-3 ms-4">
+              ipsum dolor sit amet consectetur adipisicing elit. Error iste,
+              quasi corporis sequi, aliquam mollitia nobis eius officia cumque
+              tempora commodi
+              <span class="about-content-bold"
+                >ipsum dolor sit amet consectetur adipisicing elit. Omnis,</span
+              >
+              ea ipsam repellat quia vel illo quae at sit. Lorem, ipsum dolor
+              sit amet consectetur adipisicing elit. Accusamus molestias
+              laudantium numquam quidem voluptatem maiores et ipsam distinctio
+              magni culpa?
+            </p>
+          </div>
+          <div class="flex mt-5 ms-4">
+            <button class="btn-buy">comprar</button>
+          </div>
+
+          <div class="flex mt-4 ms-0">
+            <img src="public/assets/ornament-home-and-shop-gold.svg" alt="">
+          </div>
+        </div>
+
+        <div class="container-half">
+          <img src="public/assets/1.png" alt="" />
+        </div>
+      </div>
+      <div class="container-benefits">
+        <div class="container-general">
+          hola
+        </div>
+      </div>
     </div>
   </body>
 </html>
